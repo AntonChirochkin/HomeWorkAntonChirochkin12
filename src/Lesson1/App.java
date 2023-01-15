@@ -13,9 +13,15 @@ public class App {
 
             mAM.setPublishingYear(1960);
 
-            System.out.println(mAM.getBookName() + " " + mAM.getFullName() + " " + mAM.getPublishingYear());
-            System.out.println(desertIsland.getBookName() + " " + desertIsland.getFullName() + " " + desertIsland.getPublishingYear());
-            System.out.println(cleanCod.getBookName() + " " + cleanCod.getFullName() + " " + cleanCod.getPublishingYear());
+            System.out.println(mAM);
+            System.out.println(desertIsland);
+            System.out.println(cleanCod);
 
+            System.out.println(mAM.equals(desertIsland));
+            System.out.println(desertIsland.equals(cleanCod));
+
+            System.out.println(mAM.hashCode());
+            System.out.println(desertIsland.hashCode());
+            System.out.println(cleanCod.hashCode());
             }
 }
